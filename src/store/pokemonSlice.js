@@ -75,6 +75,7 @@ const pokemonSlice = createSlice({
       // fetchPokemonByType
       .addCase(fetchPokemonByType.pending, (state) => {
         state.typeLoading = true
+        state.typeList = []
         state.error = null
       })
       .addCase(fetchPokemonByType.fulfilled, (state, action) => {
