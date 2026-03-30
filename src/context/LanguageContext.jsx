@@ -8,7 +8,7 @@ const LanguageContext = createContext()
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    return localStorage.getItem('pokedex-lang') || 'en'
+    return localStorage.getItem('pokedex-lang') || 'vi'
   })
 
   useEffect(() => {
