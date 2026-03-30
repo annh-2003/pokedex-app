@@ -1,0 +1,207 @@
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #e3350d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.error {
+  text-align: center;
+  color: #e3350d;
+  padding: 40px 24px;
+  font-size: 18px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: background-color 0.3s;
+}
+
+/* Colored top section */
+.top {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.top::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+/* Info section */
+.info {
+  padding: 24px;
+}
+
+.id {
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.types {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.typeBadge {
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.flavor {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Stats */
+.stats {
+  margin-bottom: 24px;
+}
+
+.stats h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.statRow {
+  display: grid;
+  grid-template-columns: 50% 40px 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.statName {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+.statValue {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: right;
+}
+
+.statBar {
+  height: 8px;
+  background: var(--bg-section);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.statFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+/* Abilities */
+.abilities {
+  margin-bottom: 24px;
+}
+
+.abilities h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.abilityList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ability {
+  padding: 6px 14px;
+  background: var(--bg-section);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+.ability small {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+/* Physical info */
+.physical {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.physical strong {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.physical p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}

@@ -1,0 +1,49 @@
+{
+  "favorites": [
+    {
+      "pokemonId": 1,
+      "name": "bulbasaur",
+      "nickname": "hello 2",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "id": "stHdxVL1BxY"
+    },
+    {
+      "pokemonId": 12,
+      "name": "butterfree",
+      "nickname": "butterfree",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "id": "Eh0WtPiOlNY"
+    },
+    {
+      "pokemonId": 2,
+      "name": "ivysaur",
+      "nickname": "Hello",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "id": "rtC4m5wYTNM"
+    },
+    {
+      "pokemonId": 3,
+      "name": "venusaur",
+      "nickname": "venusaur",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "id": "fV5jiOEqt1Y"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

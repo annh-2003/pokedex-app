@@ -1,0 +1,128 @@
+.card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background-color 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px var(--shadow-hover);
+}
+
+/* Top section with type-colored background */
+.imageContainer {
+  padding: 20px 16px 12px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 140px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Pokéball background watermark */
+.imageContainer::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Card info section */
+.info {
+  padding: 8px 16px 16px;
+}
+
+.id {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.name {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--text);
+}
+
+/* Type Badges */
+.types {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.typeBadge {
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Type colors */
+.grass    { background-color: #78c850; }
+.poison   { background-color: #a040a0; }
+.fire     { background-color: #f08030; }
+.water    { background-color: #6890f0; }
+.electric { background-color: #f8d030; color: #333; }
+.normal   { background-color: #a8a878; }
+.fairy    { background-color: #ee99ac; }
+.ghost    { background-color: #705898; }
+.psychic  { background-color: #f85888; }
+.ice      { background-color: #98d8d8; }
+.dragon   { background-color: #7038f8; }
+.dark     { background-color: #705848; }
+.steel    { background-color: #b8b8d0; }
+.fighting { background-color: #c03028; }
+.flying   { background-color: #a890f0; }
+.bug      { background-color: #a8b820; }
+.rock     { background-color: #b8a038; }
+.ground   { background-color: #e0c068; }
+
+/* Type background colors (lighter, for card top section) */
+.bgGrass    { background: linear-gradient(180deg, #defde0 0%, #f0fff0 100%); }
+.bgPoison   { background: linear-gradient(180deg, #e8d0e8 0%, #f5eaf5 100%); }
+.bgFire     { background: linear-gradient(180deg, #fde8d0 0%, #fff5eb 100%); }
+.bgWater    { background: linear-gradient(180deg, #d0e8fd 0%, #ebf2ff 100%); }
+.bgElectric { background: linear-gradient(180deg, #fdf8d0 0%, #fffde6 100%); }
+.bgNormal   { background: linear-gradient(180deg, #e8e8d8 0%, #f5f5ec 100%); }
+.bgFairy    { background: linear-gradient(180deg, #fde0ea 0%, #fff0f5 100%); }
+.bgGhost    { background: linear-gradient(180deg, #d8d0e8 0%, #eeebf5 100%); }
+.bgPsychic  { background: linear-gradient(180deg, #fdd0e0 0%, #ffebf0 100%); }
+.bgIce      { background: linear-gradient(180deg, #d0f0f0 0%, #ebfafa 100%); }
+.bgDragon   { background: linear-gradient(180deg, #d8d0fd 0%, #eeebff 100%); }
+.bgDark     { background: linear-gradient(180deg, #d8d0c8 0%, #eeeae5 100%); }
+.bgSteel    { background: linear-gradient(180deg, #d8d8e8 0%, #ededf5 100%); }
+.bgFighting { background: linear-gradient(180deg, #f0d0d0 0%, #faeaea 100%); }
+.bgFlying   { background: linear-gradient(180deg, #d8d0f0 0%, #eeeafa 100%); }
+.bgBug      { background: linear-gradient(180deg, #e0e8b0 0%, #f0f5d8 100%); }
+.bgRock     { background: linear-gradient(180deg, #e8e0b0 0%, #f5f0d8 100%); }
+.bgGround   { background: linear-gradient(180deg, #f0e0b0 0%, #faf5d8 100%); }

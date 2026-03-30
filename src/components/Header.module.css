@@ -1,0 +1,105 @@
+.header {
+  background: linear-gradient(135deg, #e3350d 0%, #d42a08 100%);
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(227, 53, 13, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navLink:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  margin-left: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e3350d;
+  background: white;
+  border-radius: 9px;
+}
+
+.langBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+}
+
+.langBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.themeBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+  line-height: 1;
+}
+
+.themeBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
