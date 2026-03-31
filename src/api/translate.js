@@ -23,22 +23,19 @@ export async function translateText(text, from = 'en', to = 'vi') {
   if (cache[cacheKey]) return cache[cacheKey]
 
   try {
-    const { data } = await axios.get('https://api.mymemory.translated.net/get', {
-      params: {
-        q: text,
-        langpair: `${from}|${to}`,
-      },
-    })
+    const encoded = encodeURIComponent(text)
+    const { data } = await axios.get(
+      `https://lingva.ml/api/v1/${from}/${to}/${encoded}`
+    )
 
-    const translated = data.responseData?.translatedText
-    if (translated && data.responseStatus === 200) {
-      // Save to cache
+    const translated = data?.translation
+    if (translated) {
       cache[cacheKey] = translated
       setCache(cache)
       return translated
     }
 
-    return text // fallback to original
+    return text
   } catch {
     return text // fallback on error
   }
